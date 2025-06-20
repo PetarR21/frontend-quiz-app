@@ -10,6 +10,10 @@ const quizzes = require('./data.json')
 
 app.use(cors())
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Quiz API')
+})
+
 app.get('/api/quizzes', (req, res) => {
   res.json(quizzes)
 })
