@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001/api/quizzes'
+const baseUrl = 'https://quiz-app-backend-blush.vercel.app/api/quizzes'
 
 const getQuizzes = async () => {
   const response = await axios.get(baseUrl)
